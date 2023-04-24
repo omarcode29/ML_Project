@@ -25,10 +25,15 @@ data will be utilized as unlabeled data. it is important to set the right paths 
 The next step is to train an object detection model using the labeled data.
 To accomplish this, a pre-trained state of the art object detection model
 YOLOv5. to set up the yolov5 model: 
+
 -install the requirments (pip install -r requirments.txt). 
+
 -copy the dataset to the datasetsfolder
+
 -run the scripts\make_txt.py to prepare the txt files in the dataset.
+
 -train the model : python train.py --data data/water.yaml --cfg models/yolov5x.yaml --weights weight/yolov5x.pt --batch-size 15 --epochs 80 --workers 4
+
 -to deploy the model: python detect.py (parameters to set the paths) 
 
 ## 3. K-Mean Clustering:
